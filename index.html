@@ -9,29 +9,38 @@
 </head>
 <body>
     <h1><span class="styling">TODO</span>List</h1>
- <!--    <div id="form" class=""> -->
-        <div class="input_div">
-            <div class="input">
-                <input type="text" id="input" class="input_box" placeholder="What Do You Want To Do ...">
-            </div>
-            <div class="button">
-                <button id="addButton" class="add"><i class="fas fa-plus">+</i></button>
-            </div>
+    <div class="input_div">
+        <div class="input">
+            <input type="text" id="inputTask" class="input_box" placeholder="What Do You Want To Do ...">
+            <span id="tooltip" class="hide">Introduce una tarea</span>
         </div>
-<!--         <span class="hide">Introduce una tarea</span>
-    </div> -->
-    <div class="container">
-        <div class="item">
-            <div id="task">
-                <input disabled="" id="task" class="item_input" type="text" placeholder="tarea">
-                <input disabled="" id="description" class="item_input" type="text" placeholder="descripcion">
-            </div>
-            <div id="actions">
-                <button class="editButton">Editar</button>
-                <button class="removeButton">Eliminar</button></div>
-            </div>
+        <div class="button">
+            <button class="add" id="addTaskButton"><i class="fas fa-plus">+</i></button>
         </div>
     </div>
+    <div class="container">
+<!--         <div class="item">
+            <div class="task">
+                <input class="item_input input_task" type="text" placeholder="tarea" maxlength="30">
+                <input class="item_input input_description" type="text" placeholder="descripcion" maxlength="60">
+            </div>
+            <div class="actions">
+                <button class="editButton"><img src="./assets/icons/editar.png" alt="Editar" id="editImg"></button>
+                <button class="removeButton"><img src="./assets/icons/eliminar.png" alt="Eliminar" id="removeImg"></button>
+            </div>
+        </div>
+        <div class="item">
+            <div id="task">
+                <input id="tarea" class="item_input" type="text" placeholder="tarea" maxlength="30">
+                <input id="descripcion" class="item_input" type="text" placeholder="descripcion" maxlength="60">
+            </div>
+            <div id="actions">
+                <button class="editButton"><img src="./assets/icons/editar.png" alt="Editar" id="editImg"></button>
+                <button class="removeButton"><img src="./assets/icons/eliminar.png" alt="Eliminar" id="removeImg"></button>
+            </div>
+            </div> -->
+    </div>
+
     <script type="text/javascript" src="main.js"></script>
 
 </body>

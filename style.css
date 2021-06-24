@@ -18,15 +18,13 @@ h1{
 .styling{
     font-weight: 800;
     color: rgb(0, 119, 255);
+    font-size: 3.5rem;
 }
 .input_div{
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
     width: 40%;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .input{
     flex: 75%;
@@ -44,18 +42,19 @@ h1{
     border-radius: 25px;
     width: 100%;
     color: #3c3c41;
+    margin-bottom: 0.5rem;
 }
-
-#form span{
-    text-align: center;
-    padding: 1rem;
+span{
     color: red;
+    padding-left: 2rem;
+    opacity: 0.7;
+    font-size: 1.25rem;
 }
 .add{
     display: block;
     height: 50px;
     width: 90%;
-    border-radius: 25px;
+    border-radius: 15px;
     outline: none;
     border: none;
     color:#fff;
@@ -73,7 +72,7 @@ h1{
     flex-direction: column;
 /*     justify-content: center; */
 /*     align-items: center; */
-    text-align: center;
+/*     text-align: center; */
     width: 60%;
     margin: 0rem auto;
     margin-top: 1rem;
@@ -83,16 +82,16 @@ h1{
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
-    background-color: hsla(209, 89%, 42%, 0.1);
+    background-color: hsla(209, 89%, 31%, 0.3);
 }
-#task{
+.task{
     display: flex;
     flex-direction: column;
     flex: 80%;
 }
-#actions{
+.actions{
     display: flex;
     flex-direction: row;
 }
@@ -102,33 +101,63 @@ h1{
     outline: none;
     color: #fff;
     border: none;
-    width: 350px;
-    font-size: 1.4rem;
+    font-size: 1.4rem;  
+    border-radius: 10px; 
+    padding: 5px;
+    margin-bottom: 5px;
 }
+
+.input_task{
+    width: 50%;
+}
+.input_description{
+    width: 100%;
+}
+
+
 
 .editButton{
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
 /*     margin: 0 0.5rem; */
-    font-family: 'Hind', sans-serif;
+    /* font-family: 'Hind', sans-serif; */
     background: none;
-    outline: none;
-    color: lime;
+    /* outline: none; */
+    /* color: lime; */
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
+}
+.editImg{
+    width: 80%;
+    opacity: 0.5;
+    height: auto;
+    z-index: -1;
+}
+.editImg:hover{
+    opacity: 1;
 }
 .removeButton{
-    font-size: 1.4rem;
-    font-family: 'Hind' sans-serif;
+/*     font-size: 1.4rem;
+    font-family: 'Hind' sans-serif; */
     background: none;
-    outline: none;
-    color: #e00;
+/*     outline: none; */
+/*     color: #e00; */
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
+}
+.removeImg{
+    opacity: 0.5;
+    width: 80%;
+    height: auto;
+    z-index: -1;
+}
+.removeImg:hover{
+    opacity: 1;
 }
 
-
+.editable{
+    background-color: whitesmoke;
+    color: #000000;
+}
 /* Hide & Show Elements */
 .hide{
     display: none;
