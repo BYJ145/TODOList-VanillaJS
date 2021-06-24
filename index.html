@@ -9,11 +9,28 @@
 </head>
 <body>
     <h1><span class="styling">TODO</span>List</h1>
-    <div class="input_div">
-        <input type="text" class="input" placeholder="What Do You Want To Do . . .">
-        <button class="add"><i class="fas fa-plus">+</i></button>
-    </div>
+ <!--    <div id="form" class=""> -->
+        <div class="input_div">
+            <div class="input">
+                <input type="text" id="input" class="input_box" placeholder="What Do You Want To Do ...">
+            </div>
+            <div class="button">
+                <button id="addButton" class="add"><i class="fas fa-plus">+</i></button>
+            </div>
+        </div>
+<!--         <span class="hide">Introduce una tarea</span>
+    </div> -->
     <div class="container">
+        <div class="item">
+            <div id="task">
+                <input disabled="" id="task" class="item_input" type="text" placeholder="tarea">
+                <input disabled="" id="description" class="item_input" type="text" placeholder="descripcion">
+            </div>
+            <div id="actions">
+                <button class="editButton">Editar</button>
+                <button class="removeButton">Eliminar</button></div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
 

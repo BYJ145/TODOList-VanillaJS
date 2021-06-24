@@ -1,5 +1,5 @@
-const add = document.querySelector('.add');
-var input = document.querySelector('.input');
+const add = document.querySelector('#addButton');
+var input = document.querySelector('#input');
 const container = document.querySelector('.container');
 
 
@@ -28,11 +28,11 @@ class item{
         itemBox.classList.add('item');
 
         let editButton = document.createElement('button');
-        editButton.innerHTML = "Edit";
+        editButton.innerHTML = "Editar";
         editButton.classList.add('editButton');
 
         let removeButton = document.createElement('button');
-        removeButton.innerHTML = "Remove";
+        removeButton.innerHTML = "Eliminar";
         removeButton.classList.add('removeButton');
 
         container.appendChild(itemBox);
@@ -47,10 +47,10 @@ class item{
         if(input.disabled == true){
             input.disabled = false;
             input.focus();
-            editButton.innerHTML = "Save";
+            editButton.innerHTML = "Guardar";
         }else{
             input.disabled = true;
-            editButton.innerHTML = "Edit";
+            editButton.innerHTML = "Editar";
             let index = tasks.indexOf(itemName);
             tasks[index] = input.value;
             window.localStorage.setItem('tasks', JSON.stringify(tasks));
